@@ -1,51 +1,86 @@
 {
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 14,
-    "editor.lineHeight": 1.6,
-    "editor.rulers": [80, 120],
-    "editor.renderLineHighlight": "gutter",
-    "editor.fontLigatures": false,
-    "editor.semanticHighlighting.enabled": false,
-    "editor.minimap.enabled": false,
-    //"editor.scrollbar.vertical": "hidden",
-    //"editor.scrollbar.horizontal": "hidden",
+    // ===========================
+    // Comum (copiado do perfil Padrão)
+    // ===========================
+    // Habilita os breadcrumbs no editor do documento (exibe o caminho completo e permite interações)
+    "breadcrumbs.enabled": false,
+    // ---------------------------
+    // Explorer
+    // ---------------------------
+    // Mantém as pastas do File Explorer compactadas
     "explorer.compactFolders": false,
+    "explorer.confirmDelete": true,
+    // ---------------------------
+    // Window
+    // ---------------------------
     "window.commandCenter": false,
-    "workbench.editor.labelFormat": "default",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.layoutControl.enabled": false,
-    // "workbench.activityBar.location": "hidden",
-    // "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "git.confirmSync": false,
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    "workbench.tree.indent": 20,
+    // ---------------------------
+    // Workbench
+    // ---------------------------
     "workbench.iconTheme": "symbols",
-    "explorer.confirmDelete": false,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "symbols.hidesExplorerArrows": false,
-    "terminal.integrated.fontFamily": "monospace",
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    "workbench.colorTheme": "Min Dark",
+    // Aqui eu também posso utilizar a configuração de sempre abrir um novo arquivo em branco [Para exibir, é só abrir outro editor]
+    "workbench.startupEditor": "newUntitledFile",
+    // Preserva apenas os últimos 20 comandos executados na 'paleta de comandos', mas mantém o último valor digitado
+    "workbench.commandPalette.history": 20,
+    "workbench.commandPalette.preserveInput": true,
+    // Estiliza o tamanho/formato da tab de um arquivo pinado
+    "workbench.editor.pinnedTabSizing": "compact",
+    "workbench.editor.enablePreview": false,
+    // ---------------------------
+    // Editor
+    // ---------------------------
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 13,
+    "editor.lineHeight": 1.6,
+    "editor.letterSpacing": 0.4,
+    // Desabilita a exibição do minimap do código na lateral direita
+    "editor.minimap.enabled": false,
+    // Boas práticas
+    "editor.rulers": [
+        80,
+        120
+    ],
+    // Detalhes
+    "editor.cursorBlinking": "expand",
+    "diffEditor.ignoreTrimWhitespace": false,
+    // ---------------------------
+    // Terminal
+    // ---------------------------
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    // Controles básicos da busca do VSCode: sempre mostra minimizado e não busca em diretórios "auto-gerados" para otimizar a execução.
+    "search.collapseResults": "alwaysCollapse",
+    // ---------------------------
     // Economia de recursos
+    // ---------------------------
     "telemetry.telemetryLevel": "off",
     "workbench.enableExperiments": false,
     "extensions.autoUpdate": false,
     "git.autofetch": false,
+    // ===========================
+    // Exclusivo do perfil Angular
+    // ===========================
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // Economia de recursos
     "npm.autoDetect": "off",
     "typescript.disableAutomaticTypeAcquisition": true,
-    "chat.disableAIFeatures": true,
     "files.watcherExclude": {
         "**/node_modules/**": true,
         "**/dist/**": true,
@@ -56,5 +91,5 @@
         "**/node_modules": true,
         "**/dist": true,
         "**/.angular": true
-    },
+    }
 }

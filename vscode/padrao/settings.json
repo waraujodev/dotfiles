@@ -1,13 +1,12 @@
 {
   // Habilita os breadcrumbs no editor do documento (exibe o caminho completo e permite interações)
   "breadcrumbs.enabled": false,
-
   // ---------------------------
   // Explorer
   // ---------------------------
   // Mantém as pastas do File Explorer compactadas
   "explorer.compactFolders": false,
-
+  "explorer.confirmDelete": true,
   // ---------------------------
   // Window
   // ---------------------------
@@ -17,7 +16,6 @@
   "window.dialogStyle": "custom",
   "window.titleBarStyle": "custom",
   "workbench.tree.indent": 20,
-
   // ---------------------------
   // Workbench
   // ---------------------------
@@ -27,17 +25,14 @@
     "*.md": "default",
     "*.markdown": "default",
   },
-
   // Aqui eu também posso utilizar a configuração de sempre abrir um novo arquivo em branco [Para exibir, é só abrir outro editor]
   "workbench.startupEditor": "newUntitledFile",
-
   // Preserva apenas os últimos 20 comandos executados na 'paleta de comandos', mas mantém o último valor digitado
   "workbench.commandPalette.history": 20,
   "workbench.commandPalette.preserveInput": true,
   // Estiliza o tamanho/formato da tab de um arquivo pinado
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.editor.enablePreview": false,
-
   // ---------------------------
   // Editor
   // ---------------------------
@@ -46,68 +41,62 @@
   "editor.fontSize": 13,
   "editor.lineHeight": 1.6,
   "editor.letterSpacing": 0.4,
-
   // Desabilita a exibição do minimap do código na lateral direita
   "editor.minimap.enabled": false,
-
   // Organizar imports automaticamente ao salvar + Formatar o arquivo
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit",
   },
-
   // Boas práticas
-  "editor.tabSize": 2,
-  "editor.rulers": [80, 120],
-
+  //"editor.tabSize": 2,
+  "editor.rulers": [
+    80,
+    120
+  ],
   // Detalhes
   "editor.cursorBlinking": "expand",
-  //"editor.renderLineHighlight": "gutter",
-
   "diffEditor.ignoreTrimWhitespace": false,
-
   // ---------------------------
   // Terminal
   // ---------------------------
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontLigatures.enabled": true,
-  "terminal.integrated.defaultProfile.windows": "Command Prompt",
-
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   // Define 'Markdown' como a linguagem padrão do editor (todo novo arquivo será .md por padrão)
   "files.defaultLanguage": "markdown",
-
   "security.workspace.trust.untrustedFiles": "open",
   "git.confirmSync": false,
-
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features",
   },
-
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features",
   },
-
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.json-language-features",
   },
-
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-
   // Controles básicos da busca do VSCode: sempre mostra minimizado e não busca em diretórios "auto-gerados" para otimizar a execução.
   "search.collapseResults": "alwaysCollapse",
+  // ---------------------------
+  // Economia de recursos
+  // ---------------------------
+  "telemetry.telemetryLevel": "off",
+  "workbench.enableExperiments": false,
+  "extensions.autoUpdate": "off",
+  "git.autofetch": false,
   "search.exclude": {
     "**/.git": true,
     "**/*.code-search": true,
@@ -117,28 +106,18 @@
     "**/storage": true,
     "package-lock.json": true,
   },
-
   "remote.autoForwardPortsSource": "hybrid",
-
   // Java
   "java.referencesCodeLens.enabled": true,
-
   // Typescript
   "js/ts.implementationsCodeLens.enabled": true,
   "js/ts.implementationsCodeLens.showOnInterfaceMethods": true,
-
   // Makefile
   "makefile.configureOnOpen": true,
-
-  // Claude
-  "claudeCode.preferredLocation": "sidebar",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-
   // Radhat
   "redhat.telemetry.enabled": false,
   "editor.aiStats.enabled": false,
   "docker.extension.enableComposeLanguageServer": false,
   "yaml.disableSchemaDetection": [],
   "claudeCode.hideOnboarding": true,
-  "extensions.autoUpdate": "off",
 }
