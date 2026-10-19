@@ -1,0 +1,62 @@
+=========== PADRAO PARA TODOS ===========
+
+Nome: Min Theme
+ID: miguelsolorio.min-theme
+Descrição: A minimal theme that comes in dark and light.
+Versão: 1.5.0
+Editor: Miguel Solorio
+Link do Marketplace do VS: https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme
+
+Nome: Symbols
+ID: miguelsolorio.symbols
+Descrição: A simple file icon theme for VS Code
+Versão: 0.0.26
+Editor: Miguel Solorio
+Link do Marketplace do VS: https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols
+
+Nome: GitLens — Git supercharged
+ID: eamodio.gitlens
+Descrição: Supercharge Git within VS Code — Visualize code authorship at a glance via Git blame annotations and CodeLens, seamlessly navigate and explore Git repositories, gain valuable insights via rich visualizations and powerful comparison commands, and so much more
+Versão: 19.4.0
+Editor: GitKraken
+Link do Marketplace do VS: https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+
+Nome: Prettier - Code formatter
+ID: esbenp.prettier-vscode
+Descrição: Code formatter using prettier
+Versão: 12.4.0
+Editor: Prettier
+Link do Marketplace do VS: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+Nome: Portuguese (Brazil) Language Pack for Visual Studio Code
+ID: MS-CEINTL.vscode-language-pack-pt-BR
+Descrição: Language pack extension for Portuguese (Brazil)
+Versão: 1.131.2026090407
+Editor: Microsoft
+Link do Marketplace do VS: https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-pt-BR
+
+=========== JAVA ===========
+
+Nome: Language Support for Java(TM) by Red Hat
+ID: redhat.java
+Descrição: Java Linting, Intellisense, formatting, refactoring, Maven/Gradle support and more...
+Versão: 1.57.0
+Editor: Red Hat
+Link do Marketplace do VS: https://marketplace.visualstudio.com/items?itemName=redhat.java
+
+Nome: Debugger for Java
+ID: vscjava.vscode-java-debug
+Descrição: A lightweight Java debugger for Visual Studio Code
+Versão: 0.60.0
+Editor: Microsoft
+Link do Marketplace do VS: https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug
+
+=========== ANGULAR ===========
+
+Nome: Angular Language Service
+ID: Angular.ng-template
+Descrição: Editor services for Angular templates
+Versão: 22.2.0
+Editor: Angular
+Link do Marketplace do VS: https://marketplace.visualstudio.com/items?itemName=Angular.ng-template
+

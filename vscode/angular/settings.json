@@ -1,0 +1,60 @@
+{
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.6,
+    "editor.rulers": [80, 120],
+    "editor.renderLineHighlight": "gutter",
+    "editor.fontLigatures": false,
+    "editor.semanticHighlighting.enabled": false,
+    "editor.minimap.enabled": false,
+    //"editor.scrollbar.vertical": "hidden",
+    //"editor.scrollbar.horizontal": "hidden",
+    "explorer.compactFolders": false,
+    "window.commandCenter": false,
+    "workbench.editor.labelFormat": "default",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.layoutControl.enabled": false,
+    // "workbench.activityBar.location": "hidden",
+    // "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "git.confirmSync": false,
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "symbols",
+    "explorer.confirmDelete": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "symbols.hidesExplorerArrows": false,
+    "terminal.integrated.fontFamily": "monospace",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // Economia de recursos
+    "telemetry.telemetryLevel": "off",
+    "workbench.enableExperiments": false,
+    "extensions.autoUpdate": false,
+    "git.autofetch": false,
+    "npm.autoDetect": "off",
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "chat.disableAIFeatures": true,
+    "files.watcherExclude": {
+        "**/node_modules/**": true,
+        "**/dist/**": true,
+        "**/.angular/**": true,
+        "**/.git/objects/**": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/.angular": true
+    },
+}

@@ -1,0 +1,40 @@
+{
+  // JDK
+  "java.jdt.ls.java.home": "C:\\d\\java\\jdk21.0.12_12",
+  "java.configuration.runtimes": [
+    { "name": "JavaSE-21", "path": "C:\\d\\java\\jdk21.0.12_12", "default": true }
+  ],
+
+  // Economia de recursos no Language Server
+  // Sobe só o servidor completo (o padrão "Hybrid" sobe também um servidor leve extra)
+  "java.server.launchMode": "Standard",
+  // JVM do Language Server: GC mais econômico e limite de 1 GB de memória
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable",
+  // Não procura nem importa projetos Gradle (usamos só Maven)
+  "java.import.gradle.enabled": false,
+  // Compila um projeto por vez, evitando picos de CPU e memória
+  "java.maxConcurrentBuilds": 1,
+  // Reimporta o projeto sozinho quando o pom.xml muda, sem perguntar
+  "java.configuration.updateBuildConfiguration": "automatic",
+  // Não exibe o nome dos parâmetros nas chamadas de método
+  "java.inlayHints.parameterNames.enabled": "none",
+  // Desliga a análise de nulos (@Nullable/@NonNull) e a pergunta sobre ela
+  "java.compile.nullAnalysis.mode": "disabled",
+  // Não envia dados de uso para a Red Hat
+  "redhat.telemetry.enabled": false,
+
+  // Arquivos ignorados por watcher/busca
+  "files.watcherExclude": { "**/target/**": true, "**/.git/objects/**": true },
+  "search.exclude": { "**/target": true },
+
+  // Editor mais leve
+  "editor.minimap.enabled": false,
+  "workbench.enableExperiments": false,
+
+  // Terminal: Git Bash, com JAVA_HOME e PATH para o mvnw
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.env.windows": {
+    "JAVA_HOME": "C:\\d\\java\\jdk21.0.12_12",
+    "PATH": "C:\\d\\java\\jdk21.0.12_12\\bin;${env:PATH}"
+  }
+}
